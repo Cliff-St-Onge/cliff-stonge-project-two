@@ -1,0 +1,37 @@
+.contact header {
+    background-image: url(.././assets/contact-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 66vh;
+}
+
+.contact main {
+    background: #03697C;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.contact h1 {
+    font: 400 100px 'Walter Turncoat', cursive;
+    margin-top: 0px;
+    line-height: 86px;
+}
+
+.contact-info {
+    width: 30%;
+}
+
+.message {
+    width: 60%;
+}
+
+.contact-info ul {
+    display: flex;
+    list-style: none;
+}
+
+.contact-info i {
+    font-size: 20px;
+    margin-right: 20px;
+}

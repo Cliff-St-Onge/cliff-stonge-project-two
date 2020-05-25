@@ -235,10 +235,360 @@ html {
   overflow: hidden;
 }
 
-nav {
-  font: 700 20px 'Roboto', sans-serif;
+.blog header {
+  background-image: url(.././assets/blog-header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 66vh;
+}
+
+.blog h1 {
+  font: 400 100px 'Walter Turncoat', cursive;
+  margin-top: 0px;
+  line-height: 86px;
+}
+
+.blog main {
+  background: #03697C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.leftside {
+  width: 30%;
+  padding-top: 90px;
+}
+
+.rightside {
+  width: 63%;
+  position: relative;
+  top: -140px;
+}
+
+.leftside img {
+  width: 94%;
+  -webkit-box-shadow: 22px 0 #474BB5;
+          box-shadow: 22px 0 #474BB5;
+}
+
+.mission {
+  background: #474BB5;
+  margin-left: 20%;
+  padding: 24px 20px;
+}
+
+.mission h2 {
+  font: 400 20px 'Walter Turncoat', cursive;
+  letter-spacing: 1px;
+}
+
+.mission p {
+  letter-spacing: 1px;
+  line-height: 22px;
+  padding-top: 8px;
+}
+
+.mission a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+.posts {
+  padding: 40px 0 8px 0;
+}
+
+.mission li {
+  list-style: none;
+  letter-spacing: 1px;
+  padding-left: 2px;
+  padding-bottom: 8px;
+}
+
+.mission i {
+  font-size: 4px;
+  padding-right: 16px;
+  color: #08FDED;
+  vertical-align: middle;
+}
+
+.blog-image img {
+  width: 97%;
+  margin-left: 3%;
+  -webkit-box-shadow: -24px 24px #08FDED;
+          box-shadow: -24px 24px #08FDED;
+}
+
+.rightside h2 {
+  font: 400 50px 'Walter Turncoat', cursive;
+  letter-spacing: 1px;
+}
+
+.new {
+  border-left: 4px solid #08FDED;
+  border-bottom: 4px solid #08FDED;
+  padding: 60px 80px 100px 110px;
+}
+
+.new p {
+  padding: 10px 0;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+.comments img {
+  width: 80px;
+}
+
+.contact header {
+  background-image: url(.././assets/contact-header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 66vh;
+}
+
+.contact main {
+  background: #03697C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px;
+}
+
+.contact h1 {
+  font: 400 100px 'Walter Turncoat', cursive;
+  margin-top: 0px;
+  line-height: 86px;
+}
+
+.contact-info {
+  width: 30%;
+}
+
+.message {
+  width: 60%;
+}
+
+.contact-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.contact-info i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: 400 15px 'Roboto', sans-serif;
+  color: #F3FAFF;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 84%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header nav ul {
+  padding: 60px 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav a {
+  font: 700 16px 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+footer {
+  background: #044779;
+}
+
+footer p {
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.home header {
+  background-image: url(.././assets/home-header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
 }
 
 .home h1 {
-  font: 400 145.2px 'Walter Turncoat', cursive;
+  font: 400 116px 'Walter Turncoat', cursive;
+  margin-top: 140px;
+  margin-right: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+}
+
+.updates,
+.road {
+  background: #03697C;
+}
+
+.updates-image {
+  width: 48%;
+  position: absolute;
+  left: 52%;
+  bottom: 0;
+}
+
+.updates-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 190px;
+  padding-bottom: 100px;
+}
+
+.updates-icon {
+  width: 5%;
+  padding-top: 28px;
+}
+
+.updates-icon i {
+  font-size: 20px;
+  color: #474BB5;
+  background: #08FDED;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.updates-text {
+  width: 45%;
+  padding: 20px 10px;
+}
+
+.updates h2,
+.road h2 {
+  font: 400 34px 'Walter Turncoat', cursive;
+  letter-spacing: 1px;
+}
+
+.updates p {
+  letter-spacing: 1px;
+  line-height: 22px;
+  padding: 10px 0;
+}
+
+.read,
+.gallery {
+  background: #474BB5;
+}
+
+.read-programs,
+.read-locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.read-locations {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.read-image {
+  width: 50%;
+}
+
+.read-text {
+  width: 50%;
+}
+
+.read h2 {
+  font: 400 30px 'Walter Turncoat', cursive;
+  letter-spacing: 1px;
+}
+
+.road-trips {
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+
+.road p {
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+.road-trips p {
+  padding: 20px 10%;
+}
+
+.road-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.road-events img {
+  width: 25%;
+}
+
+.road-events div {
+  width: 65%;
+}
+
+.road-events h2 {
+  line-height: 34px;
+}
+
+.road-events p {
+  padding: 16px 30px 20px 0;
+}
+
+.gallery-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
+}
+
+.gallery img {
+  width: 30%;
 }

@@ -1,0 +1,102 @@
+.blog header {
+    background-image: url(.././assets/blog-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 66vh;
+}
+
+.blog h1 {
+    font: 400 100px 'Walter Turncoat', cursive;
+    margin-top: 0px;
+    line-height: 86px;
+}
+
+.blog main {
+    background: #03697C;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftside {
+    width: 30%;
+    padding-top: 90px;
+}
+
+.rightside {
+    width: 63%;
+    position: relative;
+    top: -140px;
+}
+
+.leftside img {
+    width: 94%;
+    box-shadow: 22px 0 #474BB5;
+}
+
+.mission {
+    background: #474BB5;
+    margin-left: 20%;
+    padding: 24px 20px; 
+}
+
+.mission h2 {
+    font: 400 20px 'Walter Turncoat', cursive;
+    letter-spacing: 1px; 
+}
+
+.mission p {
+    letter-spacing: 1px;
+    line-height: 22px;
+    padding-top: 8px;
+}
+
+.mission a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.posts {
+    padding: 40px 0 8px 0;
+}
+
+.mission li {
+    list-style: none;
+    letter-spacing: 1px; 
+    padding-left: 2px;
+    padding-bottom: 8px;
+}
+
+.mission i {
+    font-size: 4px;
+    padding-right: 16px;
+    color: #08FDED;
+    vertical-align: middle;
+}
+
+.blog-image img {
+    width: 97%;
+    margin-left: 3%;
+    box-shadow: -24px 24px #08FDED;
+}
+
+.rightside h2 {
+    font: 400 50px 'Walter Turncoat', cursive;
+    letter-spacing: 1px; 
+}
+
+.new {
+    border-left: 4px solid #08FDED;
+    border-bottom: 4px solid #08FDED;
+    padding: 60px 80px 100px 110px;
+}
+
+.new p {
+    padding: 10px 0;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.comments img {
+    width: 80px;
+}

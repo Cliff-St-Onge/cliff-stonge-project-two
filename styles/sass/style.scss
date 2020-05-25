@@ -2,10 +2,190 @@
 @import 'blog';
 @import 'contact';
 
-nav {
-    font: 700 20px 'Roboto', sans-serif;
+// font-sizes changed from design sheet to better match design image
+
+// styles that apply to all pages start here
+
+* {
+    margin: 0;
+    padding: 0;
+    font: 400 15px 'Roboto', sans-serif;
+    color: #F3FAFF;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 84%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header nav ul {
+    padding: 60px 0;
+    list-style: none;
+    display: flex;
+}
+
+header nav a {
+    font: 700 16px 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+footer {
+    background: #044779;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+// styles for home page only start here
+
+.home header {
+    background-image: url(.././assets/home-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
 }
 
 .home h1 {
-    font: 400 145.2px 'Walter Turncoat', cursive;
+    font: 400 116px 'Walter Turncoat', cursive;
+    margin-top: 140px;
+    margin-right: 100px;
+    position: sticky;
+    z-index: 10;
+}
+
+.updates,
+.road {
+    background: #03697C;
+}
+
+.updates-image {
+    width: 48%;
+    position: absolute;
+    left: 52%;
+    bottom: 0;
+}
+
+.updates-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 190px;
+    padding-bottom: 100px;
+}
+
+.updates-icon {
+    width: 5%;
+    padding-top: 28px;
+}
+
+.updates-icon i {
+    font-size: 20px;
+    color: #474BB5;
+    background: #08FDED;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.updates-text {
+    width: 45%;
+    padding: 20px 10px;
+}
+
+.updates h2,
+.road h2 {
+    font: 400 34px 'Walter Turncoat', cursive;
+    letter-spacing: 1px;
+}
+
+.updates p {
+    letter-spacing: 1px;
+    line-height: 22px;
+    padding: 10px 0;
+}
+
+.read,
+.gallery {
+    background: #474BB5;
+}
+
+.read-programs,
+.read-locations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.read-locations {
+    flex-direction: row-reverse;
+}
+
+.read-image {
+    width: 50%;
+}
+
+.read-text {
+    width: 50%;
+}
+
+.read h2 {
+    font: 400 30px 'Walter Turncoat', cursive;
+    letter-spacing: 1px;
+}
+
+.road-trips {
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+
+.road p {
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.road-trips p {
+    padding: 20px 10%;
+}
+
+.road-events {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.road-events img {
+    width: 25%;
+}
+
+.road-events div {
+    width: 65%;
+}
+
+.road-events h2 {
+    line-height: 34px;
+}
+
+.road-events p {
+    padding: 16px 30px 20px 0;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.gallery img {
+    width: 30%;
 }
