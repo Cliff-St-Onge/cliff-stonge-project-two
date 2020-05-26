@@ -1,15 +1,10 @@
+@import 'background-color';
+
 .contact header {
     background-image: url(.././assets/contact-header.jpg);
     background-size: cover;
     background-position: center;
     height: 66vh;
-}
-
-.contact main {
-    background: #03697C;
-    display: flex;
-    justify-content: space-between;
-    padding: 100px;
 }
 
 .contact h1 {
@@ -18,20 +13,104 @@
     line-height: 86px;
 }
 
-.contact-info {
-    width: 30%;
+.contact main {
+    background: $primary;
 }
 
-.message {
-    width: 60%;
+.contact-sheet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 30%;
+    margin: 100px 10px 20px 10px;
 }
 
 .contact-info ul {
     display: flex;
     list-style: none;
+    margin-bottom: 20px;
 }
 
 .contact-info i {
     font-size: 20px;
     margin-right: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info p {
+    margin-top: 24px;
+    line-height: 22px;
+}
+
+.message {
+    width: 70%;
+    padding: 60px 60px 50px 60px;
+    background-color: $secondary;
+    box-shadow: 16px 16px #08FDED;
+    margin: -140px 0 100px 0;
+}
+
+.message-form input {
+    background-color: $secondary;
+    border: none;
+    width: 47%;
+    border-bottom: 2px solid #F3FAFF;
+    padding: 20px;
+}
+
+.message-form input[type=text] {
+    margin-right: 5%;
+}
+
+.message-form textarea {
+    width: 100%;
+    background-color: $secondary;
+    border: 2px solid #F3FAFF; 
+    resize: none;
+    margin-top: 40px;
+    padding: 20px; 
+}
+
+.message-form button {
+    font: 400 20px 'Walter Turncoat', cursive;
+    color: $secondary;
+    background-color:#08FDED;
+    width: 100%;
+    padding: 6px;
+    border: none;
+    margin-top: 40px;
+}
+
+// responsive design for blog page starts here
+
+@media (max-width: 950px) {
+    .contact nav ul {
+        padding-top: 40px;
+    }
+
+    .contact h1 {
+        font-size: 60px;
+    }
+
+    .contact-sheet {
+        display: block;
+        padding: 10px 0 30px 0;
+    }
+
+    .contact-info,
+    .message {
+        width: 100%;
+        margin: 0;
+        padding: 30px; 
+        box-shadow: none;
+    }
+
+    .message-form input {
+        width: 100%;
+    }
 }

@@ -265,8 +265,7 @@ html {
 
 .rightside {
   width: 63%;
-  position: relative;
-  top: -140px;
+  margin-top: -140px;
 }
 
 .leftside img {
@@ -283,18 +282,15 @@ html {
 
 .mission h2 {
   font: 400 20px 'Walter Turncoat', cursive;
-  letter-spacing: 1px;
 }
 
 .mission p {
-  letter-spacing: 1px;
   line-height: 22px;
   padding-top: 8px;
 }
 
 .mission a {
   text-decoration: none;
-  letter-spacing: 1px;
   line-height: 22px;
 }
 
@@ -304,7 +300,6 @@ html {
 
 .mission li {
   list-style: none;
-  letter-spacing: 1px;
   padding-left: 2px;
   padding-bottom: 8px;
 }
@@ -324,24 +319,140 @@ html {
 }
 
 .rightside h2 {
-  font: 400 50px 'Walter Turncoat', cursive;
-  letter-spacing: 1px;
+  font: 400 54px 'Walter Turncoat', cursive;
 }
 
 .new {
   border-left: 4px solid #08FDED;
   border-bottom: 4px solid #08FDED;
-  padding: 60px 80px 100px 110px;
+  padding: 50px 80px 100px 110px;
 }
 
 .new p {
   padding: 10px 0;
-  letter-spacing: 1px;
   line-height: 22px;
 }
 
-.comments img {
-  width: 80px;
+.comments {
+  padding: 20px 80px 0px 100px;
+}
+
+.comments h3 {
+  font: italic 400 18px 'Roboto', sans-serif;
+}
+
+.comments p {
+  padding: 10px 0;
+  line-height: 22px;
+}
+
+.comments-mariama,
+.comments-rob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments-mariama {
+  padding: 20px 0;
+}
+
+.comments-rob {
+  padding-top: 60px;
+}
+
+.comments-image {
+  width: 10%;
+}
+
+.comments-text {
+  width: 90%;
+  padding: 0 30px;
+}
+
+.comment-form {
+  padding: 20px 80px 40px 70px;
+}
+
+.comment-form input {
+  background-color: #03697C;
+  border: none;
+  width: 47%;
+  border-bottom: 2px solid #08FDED;
+  padding: 20px;
+}
+
+.comment-form input[type=text] {
+  margin-right: 5%;
+}
+
+.comment-form textarea {
+  width: 100%;
+  background-color: #03697C;
+  border: 2px solid #08FDED;
+  resize: none;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.comment-form button {
+  font: 400 20px 'Walter Turncoat', cursive;
+  color: #474BB5;
+  background-color: #08FDED;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  margin: 30px 0;
+}
+
+@media (max-width: 950px) {
+  .blog nav ul {
+    padding-top: 40px;
+  }
+  .blog h1 {
+    font-size: 60px;
+  }
+  .blog main {
+    display: block;
+  }
+  .leftside,
+  .rightside {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+  .leftside {
+    padding-bottom: 40px;
+  }
+  .new {
+    padding: 40px;
+  }
+  .comments {
+    padding: 20px 8%;
+  }
+  .comments-mariama,
+  .comments-rob {
+    display: block;
+  }
+  .comments-image {
+    width: 30%;
+    margin: 0 8%;
+  }
+  .comments-text {
+    width: 80%;
+    margin: 0 8%;
+    padding: 0;
+  }
+  .comments-rob {
+    padding-top: 20px;
+  }
+  .comment-form input {
+    width: 100%;
+  }
 }
 
 .contact header {
@@ -351,29 +462,28 @@ html {
   height: 66vh;
 }
 
-.contact main {
-  background: #03697C;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 100px;
-}
-
 .contact h1 {
   font: 400 100px 'Walter Turncoat', cursive;
   margin-top: 0px;
   line-height: 86px;
 }
 
-.contact-info {
-  width: 30%;
+.contact main {
+  background: #03697C;
 }
 
-.message {
-  width: 60%;
+.contact-sheet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-info {
+  width: 30%;
+  margin: 100px 10px 20px 10px;
 }
 
 .contact-info ul {
@@ -381,6 +491,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .contact-info i {
@@ -388,10 +499,84 @@ html {
   margin-right: 20px;
 }
 
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info p {
+  margin-top: 24px;
+  line-height: 22px;
+}
+
+.message {
+  width: 70%;
+  padding: 60px 60px 50px 60px;
+  background-color: #474BB5;
+  -webkit-box-shadow: 16px 16px #08FDED;
+          box-shadow: 16px 16px #08FDED;
+  margin: -140px 0 100px 0;
+}
+
+.message-form input {
+  background-color: #474BB5;
+  border: none;
+  width: 47%;
+  border-bottom: 2px solid #F3FAFF;
+  padding: 20px;
+}
+
+.message-form input[type=text] {
+  margin-right: 5%;
+}
+
+.message-form textarea {
+  width: 100%;
+  background-color: #474BB5;
+  border: 2px solid #F3FAFF;
+  resize: none;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.message-form button {
+  font: 400 20px 'Walter Turncoat', cursive;
+  color: #474BB5;
+  background-color: #08FDED;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  margin-top: 40px;
+}
+
+@media (max-width: 950px) {
+  .contact nav ul {
+    padding-top: 40px;
+  }
+  .contact h1 {
+    font-size: 60px;
+  }
+  .contact-sheet {
+    display: block;
+    padding: 10px 0 30px 0;
+  }
+  .contact-info,
+  .message {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .message-form input {
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   font: 400 15px 'Roboto', sans-serif;
+  letter-spacing: 1px;
   color: #F3FAFF;
 }
 
@@ -416,9 +601,14 @@ header nav ul {
 
 header nav a {
   font: 700 16px 'Roboto', sans-serif;
-  letter-spacing: 1px;
   text-decoration: none;
   margin: 0 20px;
+}
+
+header nav a:hover,
+header nav a:focus,
+header nav a:focus-within {
+  border-bottom: 4px solid #08FDED;
 }
 
 footer {
@@ -428,7 +618,6 @@ footer {
 footer p {
   text-align: center;
   padding: 10px;
-  letter-spacing: 1px;
 }
 
 .home header {
@@ -440,26 +629,25 @@ footer p {
 
 .home h1 {
   font: 400 116px 'Walter Turncoat', cursive;
-  margin-top: 140px;
-  margin-right: 100px;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 10;
+  margin: 100px 30px 0 8%;
 }
 
-.updates,
+.header-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.about,
 .road {
   background: #03697C;
 }
 
-.updates-image {
-  width: 48%;
-  position: absolute;
-  left: 52%;
-  bottom: 0;
-}
-
-.updates-boxes {
+.about-boxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,12 +660,12 @@ footer p {
   padding-bottom: 100px;
 }
 
-.updates-icon {
+.about-icon {
   width: 5%;
   padding-top: 28px;
 }
 
-.updates-icon i {
+.about-icon i {
   font-size: 20px;
   color: #474BB5;
   background: #08FDED;
@@ -485,19 +673,17 @@ footer p {
   padding: 12px;
 }
 
-.updates-text {
+.about-text {
   width: 45%;
   padding: 20px 10px;
 }
 
-.updates h2,
+.about h2,
 .road h2 {
   font: 400 34px 'Walter Turncoat', cursive;
-  letter-spacing: 1px;
 }
 
-.updates p {
-  letter-spacing: 1px;
+.about p {
   line-height: 22px;
   padding: 10px 0;
 }
@@ -505,6 +691,25 @@ footer p {
 .read,
 .gallery {
   background: #474BB5;
+}
+
+.read h2 {
+  font: 400 30px 'Walter Turncoat', cursive;
+}
+
+.read a {
+  font: 400 20px 'Walter Turncoat', cursive;
+  color: #474BB5;
+  text-decoration: none;
+  background-color: #08FDED;
+  padding: 6px 10px;
+}
+
+.read a:hover,
+.read a:focus,
+.read a:focus-within {
+  color: #08FDED;
+  background-color: #03697C;
 }
 
 .read-programs,
@@ -522,34 +727,72 @@ footer p {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  margin-top: 60px;
 }
 
 .read-image {
-  width: 50%;
+  width: 42%;
 }
 
 .read-text {
-  width: 50%;
+  width: 42%;
 }
 
-.read h2 {
-  font: 400 30px 'Walter Turncoat', cursive;
-  letter-spacing: 1px;
+.read-text p {
+  padding: 6px 0 40px 0;
+  line-height: 22px;
+}
+
+.read-programs img {
+  -webkit-box-shadow: 16px 16px #08FDED;
+          box-shadow: 16px 16px #08FDED;
+  margin-top: -40px;
+}
+
+.read-locations img {
+  -webkit-box-shadow: -16px 16px #08FDED;
+          box-shadow: -16px 16px #08FDED;
+  margin-bottom: -40px;
+}
+
+.read-programs .read-text {
+  padding-top: 80px;
+  padding-right: 10%;
+}
+
+.read-locations .read-text {
+  padding-top: 20px;
+  padding-left: 10%;
+  text-align: right;
 }
 
 .road-trips {
   text-align: center;
   padding-top: 140px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 
 .road p {
-  letter-spacing: 1px;
   line-height: 22px;
 }
 
+.road a {
+  font: 400 20px 'Walter Turncoat', cursive;
+  color: #474BB5;
+  text-decoration: none;
+  background-color: #08FDED;
+  padding: 6px 10px;
+}
+
+.road a:hover,
+.road a:focus,
+.road a:focus-within {
+  color: #08FDED;
+  background-color: #474BB5;
+}
+
 .road-trips p {
-  padding: 20px 10%;
+  padding: 20px 10% 40px 10%;
 }
 
 .road-events {
@@ -559,16 +802,21 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px 0 80px 20px;
 }
 
 .road-events img {
   width: 25%;
+  -webkit-box-shadow: -16px 16px #08FDED;
+          box-shadow: -16px 16px #08FDED;
 }
 
 .road-events div {
-  width: 65%;
+  width: 70%;
+  padding: 0 40px 0 20px;
 }
 
 .road-events h2 {
@@ -576,7 +824,7 @@ footer p {
 }
 
 .road-events p {
-  padding: 16px 30px 20px 0;
+  padding: 16px 0 20px 0;
 }
 
 .gallery-images {
@@ -590,5 +838,86 @@ footer p {
 }
 
 .gallery img {
-  width: 30%;
+  width: 31%;
+}
+
+@media (max-width: 950px) {
+  .home header nav ul {
+    padding: 40px 0 0 0;
+  }
+  .home header {
+    background-position: left;
+  }
+  .home h1 {
+    font-size: 60px;
+    margin: 8% 30px 180px 8%;
+  }
+  .header-image,
+  .about-boxes {
+    display: block;
+  }
+  .about {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-icon {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about-boxes {
+    padding-top: 180px;
+    padding-bottom: 60px;
+  }
+  .about-text {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .read-programs,
+  .read-locations {
+    display: block;
+    margin: 0 auto;
+  }
+  .read-image {
+    width: 100%;
+  }
+  .read-text {
+    width: 84%;
+    margin: 0 8%;
+  }
+  .read-programs img,
+  .read-locations img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: 0 auto;
+  }
+  .read-programs .read-text,
+  .read-locations .read-text {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .road-trips {
+    padding-top: 80px;
+  }
+  .road-events {
+    display: block;
+    padding: 100px 0 40px 0;
+  }
+  .road-events img {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .road-events div {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .gallery-images {
+    display: block;
+    padding: 60px 0;
+  }
+  .gallery img {
+    width: 100%;
+    padding: 20px;
+  }
 }

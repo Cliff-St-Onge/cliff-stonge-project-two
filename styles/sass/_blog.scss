@@ -1,3 +1,5 @@
+@import 'background-color';
+
 .blog header {
     background-image: url(.././assets/blog-header.jpg);
     background-size: cover;
@@ -12,7 +14,7 @@
 }
 
 .blog main {
-    background: #03697C;
+    background: $primary;
     display: flex;
     justify-content: space-between;
 }
@@ -24,35 +26,31 @@
 
 .rightside {
     width: 63%;
-    position: relative;
-    top: -140px;
+    margin-top: -140px;
 }
 
 .leftside img {
     width: 94%;
-    box-shadow: 22px 0 #474BB5;
+    box-shadow: 22px 0 $secondary;
 }
 
 .mission {
-    background: #474BB5;
+    background: $secondary;
     margin-left: 20%;
     padding: 24px 20px; 
 }
 
 .mission h2 {
     font: 400 20px 'Walter Turncoat', cursive;
-    letter-spacing: 1px; 
 }
 
 .mission p {
-    letter-spacing: 1px;
     line-height: 22px;
     padding-top: 8px;
 }
 
 .mission a {
     text-decoration: none;
-    letter-spacing: 1px;
     line-height: 22px;
 }
 
@@ -62,7 +60,6 @@
 
 .mission li {
     list-style: none;
-    letter-spacing: 1px; 
     padding-left: 2px;
     padding-bottom: 8px;
 }
@@ -81,22 +78,147 @@
 }
 
 .rightside h2 {
-    font: 400 50px 'Walter Turncoat', cursive;
-    letter-spacing: 1px; 
+    font: 400 54px 'Walter Turncoat', cursive;
 }
 
 .new {
     border-left: 4px solid #08FDED;
     border-bottom: 4px solid #08FDED;
-    padding: 60px 80px 100px 110px;
+    padding: 50px 80px 100px 110px;
 }
 
 .new p {
     padding: 10px 0;
-    letter-spacing: 1px;
     line-height: 22px;
 }
 
-.comments img {
-    width: 80px;
+.comments {
+    padding: 20px 80px 0px 100px;
+}
+
+.comments h3 {
+    font: italic 400 18px 'Roboto', sans-serif;
+}
+
+.comments p {
+    padding: 10px 0;
+    line-height: 22px;
+}
+
+.comments-mariama,
+.comments-rob {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments-mariama {
+    padding: 20px 0;
+}
+
+.comments-rob {
+    padding-top: 60px;
+}
+
+.comments-image {
+    width: 10%;
+}
+
+.comments-text {
+    width: 90%;
+    padding: 0 30px;
+}
+
+.comment-form {
+    padding: 20px 80px 40px 70px;
+}
+
+.comment-form input {
+    background-color: $primary;
+    border: none;
+    width: 47%;
+    border-bottom: 2px solid #08FDED;
+    padding: 20px;
+}
+
+.comment-form input[type=text] {
+    margin-right: 5%;
+}
+
+.comment-form textarea {
+    width: 100%;
+    background-color: $primary;
+    border: 2px solid #08FDED; 
+    resize: none;
+    margin-top: 30px;
+    padding: 20px; 
+}
+
+.comment-form button {
+    font: 400 20px 'Walter Turncoat', cursive;
+    color: $secondary;
+    background-color:#08FDED;
+    width: 100%;
+    padding: 6px;
+    border: none;
+    margin: 30px 0;
+}
+
+// responsive design for blog page starts here
+
+@media (max-width: 950px) {
+    .blog nav ul {
+        padding-top: 40px;
+    }
+
+    .blog h1 {
+        font-size: 60px;
+    }
+
+    .blog main {
+        display: block;
+    }
+
+    .leftside,
+    .rightside {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .leftside {
+        padding-bottom: 40px;
+    }
+
+    .new {
+        padding: 40px;
+    }
+
+    .comments {
+        padding: 20px 8%;
+    }
+
+    .comments-mariama,
+    .comments-rob {
+        display: block;
+    }
+
+    .comments-image {
+        width: 30%;
+        margin: 0 8%;
+    }
+
+    .comments-text {
+        width: 80%;
+        margin: 0 8%;
+        padding: 0;
+    }
+
+    .comments-rob {
+        padding-top: 20px;
+    }
+
+    .comment-form input {
+        width: 100%;
+    }
 }

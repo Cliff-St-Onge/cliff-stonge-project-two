@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunPlace Contact</title>
+    <link type="image/png" href=".././assets/playground.png" rel="icon">
+    <!-- icon made by Freepik from www.flaticon.com -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d45d01558f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href=".././styles/style.css">
@@ -14,9 +16,9 @@
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about-link">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -26,32 +28,34 @@
     </header>
 
     <main>
-        <section class="contact-info">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-            </ul>
+        <section class="contact-sheet wrapper"> 
+            <div class="contact-info">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
 
-            <a href="#">info@email.com</a>
+                <a href="mailto:info@email.com">info@email.com</a>
 
-            <p>123 - 456 - 7890<br>123 Queen Street West, Unit 10<br>Toronto, Ontario<br>M5V2D5</p>
-        </section>
+                <p>123 - 456 - 7890<br>123 Queen Street West, Unit 10<br>Toronto, Ontario<br>M5V2D5</p>
+            </div>
 
-        <section class="message">
-            <form action="#" method="POST" class="comment-form">
-                <label for="name" class="sr-only">Name</label>
-                <input type="name" name="name" id="sr-only" placeholder="Name" required="true">
-            
-                <label for="email" class="sr-only">Email address</label>
-                <input type="email" name="email" id="sr-only" placeholder="Email address" required="true">
-            
-                <label for="comment" class="sr-only">Message</label>
-                <input type="comment" name="comment" id="sr-only" placeholder="Comment" required="true">
-            
-                <button>Submit</button>
-            </form>
+            <div class="message">
+                <form action="#" method="POST" class="message-form">
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required="true">
+                
+                    <label for="email" class="sr-only">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" required="true">
+                
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="8" placeholder="Message" required="true"></textarea>
+                
+                    <button>Submit</button>
+                </form>
+            </div>
         </section>
     </main>
 

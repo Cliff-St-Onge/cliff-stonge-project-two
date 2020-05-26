@@ -1,8 +1,10 @@
 @import 'setup';
 @import 'blog';
 @import 'contact';
+@import 'background-color';
 
 // font-sizes changed from design sheet to better match design image
+// images optimized with ImageOptim
 
 // styles that apply to all pages start here
 
@@ -10,6 +12,7 @@
     margin: 0;
     padding: 0;
     font: 400 15px 'Roboto', sans-serif;
+    letter-spacing: 1px;
     color: #F3FAFF;
 }
 
@@ -32,9 +35,14 @@ header nav ul {
 
 header nav a {
     font: 700 16px 'Roboto', sans-serif;
-    letter-spacing: 1px;
     text-decoration: none;
     margin: 0 20px;
+}
+
+header nav a:hover,
+header nav a:focus,
+header nav a:focus-within {
+    border-bottom: 4px solid $highlight;
 }
 
 footer {
@@ -44,7 +52,6 @@ footer {
 footer p {
     text-align: center;
     padding: 10px;
-    letter-spacing: 1px;
 }
 
 // styles for home page only start here
@@ -58,25 +65,21 @@ footer p {
 
 .home h1 {
     font: 400 116px 'Walter Turncoat', cursive;
-    margin-top: 140px;
-    margin-right: 100px;
-    position: sticky;
-    z-index: 10;
+    margin: 100px 30px 0 8%;
 }
 
-.updates,
+.header-image {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.about,
 .road {
-    background: #03697C;
+    background: $primary;
 }
 
-.updates-image {
-    width: 48%;
-    position: absolute;
-    left: 52%;
-    bottom: 0;
-}
-
-.updates-boxes {
+.about-boxes {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -84,39 +87,56 @@ footer p {
     padding-bottom: 100px;
 }
 
-.updates-icon {
+.about-icon {
     width: 5%;
     padding-top: 28px;
 }
 
-.updates-icon i {
+.about-icon i {
     font-size: 20px;
-    color: #474BB5;
-    background: #08FDED;
+    color: $secondary;
+    background: $highlight;
     border-radius: 50%;
     padding: 12px;
 }
 
-.updates-text {
+.about-text {
     width: 45%;
     padding: 20px 10px;
 }
 
-.updates h2,
+.about h2,
 .road h2 {
     font: 400 34px 'Walter Turncoat', cursive;
-    letter-spacing: 1px;
 }
 
-.updates p {
-    letter-spacing: 1px;
+.about p {
     line-height: 22px;
     padding: 10px 0;
 }
 
 .read,
 .gallery {
-    background: #474BB5;
+    background: $secondary;
+}
+
+.read h2 {
+    font: 400 30px 'Walter Turncoat', cursive;
+}
+
+.read a {
+    font: 400 20px 'Walter Turncoat', cursive;
+    color: $secondary;
+    text-decoration: none;
+    background-color: $highlight;
+    padding: 6px 10px;
+}
+
+.read a:hover,
+.read a:focus,
+.read a:focus-within {
+    color: $highlight;
+    background-color: $primary;
 }
 
 .read-programs,
@@ -127,49 +147,87 @@ footer p {
 
 .read-locations {
     flex-direction: row-reverse;
+    margin-top: 60px;
 }
 
 .read-image {
-    width: 50%;
+    width: 42%;
 }
 
 .read-text {
-    width: 50%;
+    width: 42%;
 }
 
-.read h2 {
-    font: 400 30px 'Walter Turncoat', cursive;
-    letter-spacing: 1px;
+.read-text p {
+    padding: 6px 0 40px 0;
+    line-height: 22px;
+}
+
+.read-programs img {
+    box-shadow: 16px 16px $highlight;
+    margin-top: -40px;
+}
+
+.read-locations img {
+    box-shadow: -16px 16px $highlight;
+    margin-bottom: -40px;
+}
+
+.read-programs .read-text {
+    padding-top: 80px;
+    padding-right: 10%;
+}
+
+.read-locations .read-text {
+    padding-top: 20px;
+    padding-left: 10%;
+    text-align: right;
 }
 
 .road-trips {
     text-align: center;
     padding-top: 140px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .road p {
-    letter-spacing: 1px;
     line-height: 22px;
 }
 
+.road a {
+    font: 400 20px 'Walter Turncoat', cursive;
+    color: $secondary;
+    text-decoration: none;
+    background-color: $highlight;
+    padding: 6px 10px;
+}
+
+.road a:hover,
+.road a:focus,
+.road a:focus-within {
+    color: $highlight;
+    background-color: $secondary;
+}
+
 .road-trips p {
-    padding: 20px 10%;
+    padding: 20px 10% 40px 10%;
 }
 
 .road-events {
     display: flex;
     justify-content: space-between;
-    padding-top: 120px;
-    padding-bottom: 80px;
+    align-items: center;
+    padding: 120px 0 80px 20px;
 }
 
 .road-events img {
     width: 25%;
+    box-shadow: -16px 16px $highlight;
 }
 
 .road-events div {
-    width: 65%;
+    width: 70%;
+    padding: 0 40px 0 20px; 
 }
 
 .road-events h2 {
@@ -177,7 +235,7 @@ footer p {
 }
 
 .road-events p {
-    padding: 16px 30px 20px 0;
+    padding: 16px 0 20px 0;
 }
 
 .gallery-images {
@@ -187,5 +245,105 @@ footer p {
 }
 
 .gallery img {
-    width: 30%;
+    width: 31%;
+}
+
+// responsive design for home page starts here
+
+@media (max-width: 950px) {
+
+    .home header nav ul {
+        padding: 40px 0 0 0;
+    }
+
+    .home header {
+        background-position: left;
+    }
+
+    .home h1 {
+        font-size: 60px;
+        margin: 8% 30px 180px 8%;
+    }
+
+    .header-image,
+    .about-boxes {
+        display: block;
+    }
+
+    .about {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .about-icon {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .about-boxes {
+        padding-top: 180px;
+        padding-bottom: 60px;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .read-programs,
+    .read-locations {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .read-image {
+        width: 100%;
+    }
+
+    .read-text {
+        width: 84%;
+        margin: 0 8%;
+    }
+
+    .read-programs img,
+    .read-locations img {
+        box-shadow: none;
+        margin: 0 auto;
+    }
+
+    .read-programs .read-text,
+    .read-locations .read-text {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .road-trips {
+        padding-top: 80px;
+    }
+
+    .road-events {
+        display: block;
+        padding: 100px 0 40px 0;
+    }
+
+    .road-events img {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .road-events div {
+        width: 100%;
+        padding: 40px 20px; 
+        text-align: center;
+    }
+
+    .gallery-images {
+        display: block;
+        padding: 60px 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        padding: 20px;
+    }
 }

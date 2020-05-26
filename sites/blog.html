@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunPlace Blog</title>
+    <link type="image/png" href=".././assets/playground.png" rel="icon">
+    <!-- icon made by Freepik from www.flaticon.com -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d45d01558f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href=".././styles/style.css">
@@ -14,10 +16,10 @@
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about-link">About</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         
@@ -27,15 +29,14 @@
 
     <main>
         <section class="leftside">
-            <img src=".././assets/blog-side-image.jpg" alt="">
-            <!-- alt text -->
+            <img src=".././assets/blog-side-image.jpg" alt="Two children reaching into a box of oversized coloured chalk">
 
             <div class="mission">
                 <h2>Our mission</h2>
 
                 <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
 
-                <a href="#">Find out more.</a>
+                <a href="../index.html">Find out more.</a>
 
                 <h2 class="posts">Recent Posts</h2>
 
@@ -50,8 +51,7 @@
 
         <section class="rightside">
             <div class="blog-image">
-                <img src=".././assets/blog-post-imag.jpg" alt="">
-                <!-- alt text -->
+                <img src=".././assets/blog-post-imag.jpg" alt="Small child playing in bubbles from a very large bubble stick">
             </div>
 
             <div class="new">
@@ -69,39 +69,45 @@
             </div>
 
             <div class="comments">
-                <h2>Comments</h2>
+                <h2>Comments:</h2>
 
-                <div>
-                    <img src=".././assets/blog-comment-1.jpg" alt="">
-                    <!-- alt text -->
+                <div class="comments-mariama">
+                    <div class="comments-image">
+                        <img src=".././assets/blog-comment-1.jpg" alt="Headshot of Mariama">
+                    </div>
 
-                    <p>Tuesday October 9th, 2019 by Mariama</p>
+                    <div class="comments-text">
+                        <h3>Tuesday October 9th, 2019 by Mariama</h3>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti repellat beatae architecto adipisci doloremque, minus, tempora ipsam atque tempore ratione quae quasi labore animi, sint id rem eius natus eaque!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti repellat beatae architecto adipisci doloremque, minus, tempora ipsam atque tempore ratione quae quasi labore animi, sint id rem eius natus eaque!</p>
+                    </div>
                 </div>
 
-                <div>
-                    <img src=".././assets/blog-comment-2.jpg" alt="">
-                    <!-- alt text -->
+                <div class="comments-rob">
+                    <div class="comments-image">
+                        <img src=".././assets/blog-comment-2.jpg" alt="Headshot of Rob">
+                    </div>
 
-                    <p>Wednesday October 10th, 2019 by Rob</p>
+                    <div class="comments-text">
+                        <h3>Wednesday October 10th, 2019 by Rob</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sequi corrupti explicabo aspernatur molestiae mollitia. Dignissimos unde cumque architecto quae!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sequi corrupti explicabo aspernatur molestiae mollitia dignissimos unde.</p>
+                    </div>
                 </div>
             </div>
 
             <form action="#" method="POST" class="comment-form">
                 <label for="name" class="sr-only">Name</label>
-                <input type="name" name="name" id="sr-only" placeholder="Name" required="true">
+                <input type="text" name="name" id="name" placeholder="Name" required="true">
 
                 <label for="email" class="sr-only">Email address</label>
-                <input type="email" name="email" id="sr-only" placeholder="Email address" required="true">
+                <input type="email" name="email" id="email" placeholder="Email address" required="true">
 
                 <label for="comment" class="sr-only">Comment</label>
-                <input type="comment" name="comment" id="sr-only" placeholder="Comment" required="true">
-                
-                <button>Post Comment</button>
-            </form>
+                <textarea name="comment" id="comment" cols="30" rows="7" placeholder="Comment" required="true"></textarea>
+                        
+                <button>Post Comment</button>                
+            </form>            
         </section>
     </main>
     
